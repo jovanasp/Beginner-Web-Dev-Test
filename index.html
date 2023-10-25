@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- Bootstrap Font Icon CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+  <!-- Project inner css file -->
+  <link rel="stylesheet" href="style.css">
+  <title>Web Dev Test</title>
+</head>
+
+<body>
+
+  <div class="header">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <button type="button" class="btn btn-light" id="btn"><i class="bi bi-toggle-off"></i> Dark mode</button>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-light" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="image" />
+  </div>
+
+  <div class="main">
+    
+    <section class="container-fluid">
+      <div class="row align-items-center content">
+        <div class="col-md-6">
+          <div class="row justify-content-center">
+            <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
+              <h2>Title</h2>
+              <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus nesciunt eum corporis
+                quia, ipsum dolor praesentium aspernatur. Veniam quas, dignissimos iste laborum tempore voluptates
+                suscipit rem in, cumque placeat ducimus!
+                Omnis obcaecati suscipit, accusamus deserunt commodi molestias maiores in veniam quos at maxime est vero
+                reiciendis cupiditate quia adipisci doloribus. Vel dolore, eveniet totam excepturi cum provident
+                suscipit
+                et! Quidem.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <img class="img-fluid"
+            src="https://images.unsplash.com/photo-1565843708714-52ecf69ab81f?auto=format&fit=crop&q=80&w=2072&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+        </div>
+      </div>
+    </section>
+    <section class="container-fluid">
+      <div class="row align-items-center content">
+        <div class="col-md-6 order-2 order-md-1">
+          <img class="img-fluid"
+            src="https://images.unsplash.com/photo-1516820827855-3ea1bd6f79ea?auto=format&fit=crop&q=80&w=1782&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+        </div>
+        <div class="col-md-6 order-1 order-md-2">
+          <div class="row justify-content-center">
+            <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
+              <h2>Title</h2>
+              <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus nesciunt eum corporis
+                quia, ipsum dolor praesentium aspernatur. Veniam quas, dignissimos iste laborum tempore voluptates
+                suscipit rem in, cumque placeat ducimus!
+                Omnis obcaecati suscipit, accusamus deserunt commodi molestias maiores in veniam quos at maxime est vero
+                reiciendis cupiditate quia adipisci doloribus. Vel dolore, eveniet totam excepturi cum provident
+                suscipit
+                et! Quidem.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="cards">
+      
+        <form id="inputDetails">
+          <div class="row">
+            <div class="form-group col-md-6">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group col-md-6">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="example@email.com" required>
+            </div>
+          </div>
+          <button class="btn btn-light" type="submit" id="submitBtn">Submit</button>
+        </form>
+      
+    </div>
+    
+    <div class="cards" id="userCard">
+      <table>
+        <thead>
+          <tr>
+          <th>Name</th>
+          <th>Email</th>
+        </tr>
+        </thead>
+        <tbody id="userDetails">
+
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+
+  <footer class="text-center text-lg-start">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Copyright by</h5>
+        <p class="card-text">
+          © <script>document.write(new Date().getFullYear());</script> Jovana Spasovska
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
